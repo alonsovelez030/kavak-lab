@@ -1,0 +1,41 @@
+@import '../abstracts/mixins';
+
+input:not([type]), input[type=text]:not(.browser-default), 
+input[type=password]:not(.browser-default), 
+input[type=email]:not(.browser-default), 
+input[type=url]:not(.browser-default), 
+input[type=time]:not(.browser-default), 
+input[type=date]:not(.browser-default), 
+input[type=datetime]:not(.browser-default), 
+input[type=datetime-local]:not(.browser-default), 
+input[type=tel]:not(.browser-default), 
+input[type=number]:not(.browser-default), 
+input[type=search]:not(.browser-default),
+.rtp-input {
+    border: 1px solid $gray-5;
+    border-radius: 3px;
+    outline: 0px;
+    box-shadow: none;
+    font-family: $normal-font;
+    font-weight: 300;
+
+    color: rgba(0,0,0,.87);
+    padding: 5px;
+    
+    &.theme{
+        &-dark{
+            width: 100%;
+            padding: 10px;
+            background-color: $gray-3;
+            border: 1px solid $gray-3;
+            &::placeholder{ color: $gray-1; }
+            &:focus, &:valid { 
+                background-color: white;
+                border: 1px solid $gray-3;
+            }
+        }
+    }
+
+    &::placeholder{ color: $gray-5; }
+    &:valid{ background-color: $white; }
+}

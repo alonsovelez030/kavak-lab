@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
+/* Fonts */
+@import "base/typography";
+
+/* Variables */
+@import "abstracts/variables";
+@import "abstracts/animations";
+@import "abstracts/mixins";
+@import "abstracts/keyframes";
+
+/* Components */
+@import "components/forms";
+@import "components/popups";
+@import "components/modals";
+@import "components/slide";
+
+/* Utilities */
+@import "utilities/fonts.util";
+
+/* Reset */
+@import "base/reset";
+
+@media (min-width: 1200px) {
+    .container { max-width: 1170px; }
+}

@@ -1,0 +1,72 @@
+<nav class="nav-bar">
+    <div class="container">
+        <div class="logo-search">
+            <img [routerLink]="['/']" class="logo" src="./assets/img/logo.png" alt="Logo Kavak">
+        </div>
+        <ul>
+            <li class="mr-4"><a>Ingresar</a></li>
+            <li><a>Registrate</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container form-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form">
+                <h2 class="light">Ingresar nuevo usuario</h2>
+                <hr>
+                <form [formGroup]='actionPointForm'>
+                    <div class="form-group">
+                        <input
+                            formControlName='name'
+                            placeholder="Ingresar el nombre"
+                            class="form-control">
+                        <input
+                            formControlName='last_name'
+                            placeholder="Ingresar el apellido"
+                            class="form-control">
+                        <input
+                            formControlName='email'
+                            placeholder="Ingresar el apellido"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input
+                            formControlName='country'
+                            placeholder="Pais"
+                            class="form-control">
+                        <input
+                            formControlName='gender'
+                            placeholder="Genero"
+                            class="form-control">
+                        <input
+                            formControlName='phone'
+                            placeholder="Teléfono"
+                            class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="info-links">
+        <div class="container">
+            <ul class="links">
+                <li class="h6 regular">Información</li>
+                <li class="items mt-2"><a href="">Terminos & Condiciones</a></li>
+                <li class="items mt-1"><a href="">Compra Seguro</a></li>
+            </ul>
+            <ul class="links ml-5">
+                <li class="h6 regular">Tus servicios</li>
+                <li class="items mt-2"><a href="">Mis Historial de pagos</a></li>
+                <li class="items mt-1"><a href="">Mis Favoritos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copy">
+        <div class="container">
+            <p class="h6 regular">Copyright © 2020-2021 Kavak</p>
+        </div>
+    </div>
+</footer>
